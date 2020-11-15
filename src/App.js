@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [timeLeft, setTimeLeft] = useState( 25 * 60);
 
-  const minutes = Math.floor(timeLeft / 60);
+  const minutes = Math.floor(timeLeft / 60).toString.padStart(2,'0');
   const seconds = (timeLeft - minutes * 60).toString().padStart(2, '0');
 
 
